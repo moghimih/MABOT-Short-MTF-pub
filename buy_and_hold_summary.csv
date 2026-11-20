@@ -1,0 +1,2 @@
+strategy,initial_capital,final_equity,return_pct,max_drawdown_pct,symbols,candles
+BUY_AND_HOLD,100.0,611.078694189986,511.0786941899859,-69.52129948783717,"BTCUSDT,ETHUSDT,ZECUSDT,XRPUSDT",2982

@@ -1,0 +1,154 @@
+===========================================================================
+MABOT - OLD ENGINE VS RISK ENGINE
+===========================================================================
+
+Loading BTCUSDT...
+=======================================================
+DATA VALIDATION: BTCUSDT
+=======================================================
+Rows: 3420
+STATUS: PASSED
+No data quality problems detected.
+=======================================================
+
+Loading ETHUSDT...
+=======================================================
+DATA VALIDATION: ETHUSDT
+=======================================================
+Rows: 3409
+STATUS: PASSED
+No data quality problems detected.
+=======================================================
+
+Loading ZECUSDT...
+=======================================================
+DATA VALIDATION: ZECUSDT
+=======================================================
+Rows: 2982
+STATUS: PASSED
+No data quality problems detected.
+=======================================================
+
+Loading XRPUSDT...
+=======================================================
+DATA VALIDATION: XRPUSDT
+=======================================================
+Rows: 3408
+STATUS: PASSED
+No data quality problems detected.
+=======================================================
+
+PREPARING COMMON PERIOD
+COMMON TIMESTAMPS: 2982
+BTCUSDT: 2982 rows | 2025-07-07 16:30:00+00:00 | 2026-11-16 12:30:00+00:00
+ETHUSDT: 2982 rows | 2025-07-07 16:30:00+00:00 | 2026-11-16 12:30:00+00:00
+ZECUSDT: 2982 rows | 2025-07-07 16:30:00+00:00 | 2026-11-16 12:30:00+00:00
+XRPUSDT: 2982 rows | 2025-07-07 16:30:00+00:00 | 2026-11-16 12:30:00+00:00
+
+===========================================================================
+STRATEGY: BASELINE
+===========================================================================
+BTCUSDT: BUY=888 | SELL=1815
+ETHUSDT: BUY=851 | SELL=1758
+ZECUSDT: BUY=1191 | SELL=1488
+XRPUSDT: BUY=605 | SELL=2117
+
+OLD ENGINE:
+initial_capital: 100.0
+final_equity: 409.93362684881265
+total_return_pct: 309.9336268488127
+max_drawdown_pct: -62.764255814812785
+closed_trades: 104
+win_rate_pct: 30.76923076923077
+gross_profit: 1054.6942916475214
+gross_loss: 744.7606647987087
+profit_factor: 1.4161519821036472
+open_positions: 0
+remaining_cash: 409.93362684881265
+
+RISK ENGINE:
+initial_capital: 100.0
+final_equity: 111.13254608402373
+total_return_pct: 11.13254608402372
+max_drawdown_pct: -13.275353159273962
+total_trades: 174
+win_rate_pct: 29.310344827586203
+profit_factor: 1.1522419295770536
+open_positions: 0
+cash: 111.13254608402373
+
+===========================================================================
+STRATEGY: ADX
+===========================================================================
+BTCUSDT: BUY=661 | SELL=1815
+ETHUSDT: BUY=569 | SELL=1758
+ZECUSDT: BUY=934 | SELL=1488
+XRPUSDT: BUY=410 | SELL=2117
+
+OLD ENGINE:
+initial_capital: 100.0
+final_equity: 321.19175607472
+total_return_pct: 221.19175607472
+max_drawdown_pct: -56.33719196565307
+closed_trades: 74
+win_rate_pct: 28.37837837837838
+gross_profit: 700.3710432043936
+gross_loss: 479.1792871296736
+profit_factor: 1.461605419966456
+open_positions: 0
+remaining_cash: 321.19175607472
+
+RISK ENGINE:
+initial_capital: 100.0
+final_equity: 92.33846533836359
+total_return_pct: -7.661534661636404
+max_drawdown_pct: -20.412623949705566
+total_trades: 140
+win_rate_pct: 30.0
+profit_factor: 0.8770619148648322
+open_positions: 0
+cash: 92.33846533836359
+
+===========================================================================
+STRATEGY: BREAKOUT
+===========================================================================
+BTCUSDT: BUY=97 | SELL=219
+ETHUSDT: BUY=92 | SELL=188
+ZECUSDT: BUY=138 | SELL=221
+XRPUSDT: BUY=68 | SELL=237
+
+OLD ENGINE:
+initial_capital: 100.0
+final_equity: 458.18475608301446
+total_return_pct: 358.18475608301446
+max_drawdown_pct: -37.45383690066956
+closed_trades: 63
+win_rate_pct: 36.507936507936506
+gross_profit: 1021.9449123809471
+gross_loss: 663.7601562979324
+profit_factor: 1.5396297935096928
+open_positions: 0
+remaining_cash: 458.18475608301446
+
+RISK ENGINE:
+initial_capital: 100.0
+final_equity: 114.63739632239796
+total_return_pct: 14.637396322397954
+max_drawdown_pct: -14.079631044093254
+total_trades: 95
+win_rate_pct: 30.526315789473685
+profit_factor: 1.2796927228772026
+open_positions: 0
+cash: 114.63739632239796
+
+====================================================================================================
+FINAL COMPARISON
+====================================================================================================
+          old_final_equity  risk_final_equity  old_return_pct  risk_return_pct  old_drawdown_pct  risk_drawdown_pct  old_trades  risk_trades  old_win_rate_pct  risk_win_rate_pct  old_profit_factor  risk_profit_factor  risk_open_positions  risk_remaining_cash
+BASELINE        409.933627         111.132546      309.933627        11.132546        -62.764256         -13.275353       104.0        174.0         30.769231          29.310345           1.416152            1.152242                  0.0           111.132546
+ADX             321.191756          92.338465      221.191756        -7.661535        -56.337192         -20.412624        74.0        140.0         28.378378          30.000000           1.461605            0.877062                  0.0            92.338465
+BREAKOUT        458.184756         114.637396      358.184756        14.637396        -37.453837         -14.079631        63.0         95.0         36.507937          30.526316           1.539630            1.279693                  0.0           114.637396
+
+Saved:
+risk_engine_comparison.csv
+Individual trade logs saved.
